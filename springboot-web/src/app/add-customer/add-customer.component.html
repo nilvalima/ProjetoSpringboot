@@ -1,0 +1,17 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Customer</h2>
+  
+  <form>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input [(ngModel)]="customer.firstName" name="firstName" class="form-control" id="firstName" />
+    </div>
+    
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input [(ngModel)]="customer.lastName" name="lastName" class="form-control" id="lastName" />
+    </div>
+    
+    <button class="btn btn-success" (click)="create()">Salvar</button>
+  </form>
+</div>
